@@ -1,0 +1,65 @@
+~/stormer_deepspeed/extras via 🐍 v3.11.8 via 🅒 base_clone 
+❯ python trials_on_weather_modification.py 
+
+---Printing out energy .nc file variables and shapes:---
+
+
+time ('time',) (35040,)
+building ('building',) (20,)
+weather_vars ('weather_vars',) (7,)
+lat_lon ('lat_lon',) (2,)
+time_features ('time_features',) (6,)
+energy_consumption ('building', 'time') (20, 35040)
+weather ('building', 'time', 'weather_vars') (20, 35040, 7)
+building_coord ('building', 'lat_lon') (20, 2)
+dataset_time_features ('time', 'time_features') (35040, 6)
+
+---Generating numpy energy array:---
+
+
+
+---Generating numpy weather array:---
+
+
+Seeking to root took 23.54 ms.
+Calculating shapes took 24215.61 ms.
+Allocating empty array took 0.96 ms.
+Populating empty array took 175714.72 ms.
+
+---Generating dataset:---
+
+
+Generating dataset took 1414.76 ms.
+
+~/stormer_deepspeed/extras via 🐍 v3.11.8 via 🅒 base_clone took 3m37s 
+❯ python trials_on_weather_modification.py 
+
+---Printing out energy .nc file variables and shapes:---
+
+
+time ('time',) (35040,)
+building ('building',) (20,)
+weather_vars ('weather_vars',) (7,)
+lat_lon ('lat_lon',) (2,)
+time_features ('time_features',) (6,)
+energy_consumption ('building', 'time') (20, 35040)
+weather ('building', 'time', 'weather_vars') (20, 35040, 7)
+building_coord ('building', 'lat_lon') (20, 2)
+dataset_time_features ('time', 'time_features') (35040, 6)
+
+---Generating numpy energy array:---
+
+
+
+---Generating numpy weather array:---
+
+
+Seeking to root took 1.01 ms.
+Calculating shapes took 8.27 ms.
+Allocating empty array took 0.07 ms.
+Populating empty array took 5530.95 ms.
+
+---Generating dataset:---
+
+
+Generating dataset took 1315.87 ms.
